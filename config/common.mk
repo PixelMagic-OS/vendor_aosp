@@ -187,7 +187,8 @@ PRODUCT_PACKAGES += \
 
 # Apps
 PRODUCT_PACKAGES += \
-    Aperture
+    Aperture \
+    Launcher3QuickStep
 
 # Use gestures by default
 PRODUCT_PRODUCT_PROPERTIES += \
