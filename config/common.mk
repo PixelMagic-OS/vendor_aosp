@@ -192,7 +192,8 @@ PRODUCT_PACKAGES += \
 # Apps
 PRODUCT_PACKAGES += \
     Aperture \
-    Launcher3QuickStep
+    Launcher3QuickStep \
+    ThemePicker
 
 # Use gestures by default
 PRODUCT_PRODUCT_PROPERTIES += \
