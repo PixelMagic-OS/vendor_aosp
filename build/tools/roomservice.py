@@ -47,8 +47,8 @@ custom_default_revision = os.getenv('ROOMSERVICE_DEFAULT_BRANCH', 'thirteen-plus
 custom_fallback_revision = 'thirteen'
 uses_fallback_revision = False
 custom_dependencies = "aosp.dependencies"
-org_manifest = "pixel-devices"  # leave empty if org is provided in manifest
-org_display = "PixelExperience-Devices"  # needed for displaying
+org_manifest = "pm-devices"  # leave empty if org is provided in manifest
+org_display = "PixelMagic-Devices"  # needed for displaying
 
 github_auth = None
 
