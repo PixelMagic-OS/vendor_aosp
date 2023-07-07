@@ -207,7 +207,8 @@ PRODUCT_PACKAGES += \
     Aperture \
     Launcher3QuickStep \
     ThemePicker \
-    ThemesStub
+    ThemesStub \
+    OmniJaws
 
 # Use gestures by default
 PRODUCT_PRODUCT_PROPERTIES += \
