@@ -18,3 +18,14 @@ ifeq ($(IS_OFFICIAL),true)
         net.pixelos.build_type=ci \
         net.pixelos.version=$(CUSTOM_VERSION_PROP)
 endif
+
+# Versioning props
+ADDITIONAL_SYSTEM_PROPERTIES  += \
+    org.pm.version=$(PM_BASE_VERSION) \
+    org.pm.build_date=$(CUSTOM_BUILD_DATE) \
+    org.pm.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
+    org.pm.build_type=$(CUSTOM_BUILD_TYPE) \
+    org.pm.codename=$(PM_BASE_VERSION) \
+    org.pm.build_version=$(PM_BUILD_VERSION) \
+    ro.pm.maintainer=$(PM_MAINTAINER) \
+    org.pm.device=$(TARGET_DEVICE)
