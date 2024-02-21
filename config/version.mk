@@ -1,6 +1,9 @@
 # Type of Build
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
 
+# PixelMagic Props
+PM_BASE_VERSION = UWU
+
 # Time Related
 CUSTOM_DATE_YEAR := $(shell date -u +%Y)
 CUSTOM_DATE_MONTH := $(shell date -u +%m)
