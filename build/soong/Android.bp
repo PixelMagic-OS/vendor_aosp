@@ -1,4 +1,4 @@
-// PixelOS soong configs
+// PixelMagic soong configs
 
 bootstrap_go_package {
     name: "soong-custom-generator",
