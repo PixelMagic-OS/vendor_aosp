@@ -252,6 +252,20 @@ CUSTOM_LOCALES += \
 
 include vendor/aosp/config/version.mk
 
+# NexusLauncher
+ifeq ($(TARGET_INCLUDE_NEXUS_LAUNCHER),true)
+PRODUCT_PACKAGES += \
+    NexusLauncherRelease
+else
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    vendor/aosp/pixel-overlay
+
+PRODUCT_PACKAGES += \
+    Launcher3QuickStep \
+    GoogleConfigOverlay \
+    PixelConfigOverlayCommon
+endif
+
 # OTA
 $(call inherit-product, vendor/aosp/config/ota.mk)
 
