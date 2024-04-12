@@ -194,6 +194,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     TouchGestures
 
+# Launcher
+PRODUCT_PACKAGES += \
+    Launcher3QuickStep \
+
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
     procmem
