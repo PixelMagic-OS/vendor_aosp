@@ -198,6 +198,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Launcher3QuickStep \
 
+ifeq ($(WITH_GMS),false)
+PRODUCT_PACKAGES += \
+    Etar \
+    ExactCalculator \
+    Glimpse \
+    Recorder \
+    Jelly
+endif
+
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
     procmem
