@@ -262,7 +262,8 @@ PRODUCT_PACKAGES += \
 
 # ThemePicker
 PRODUCT_PACKAGES += \
-    ThemePicker
+    ThemePicker \
+    ThemesStub
 
 # Translations
 CUSTOM_LOCALES += \
