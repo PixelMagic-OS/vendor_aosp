@@ -28,4 +28,5 @@ ADDITIONAL_SYSTEM_PROPERTIES  += \
     org.pm.codename=$(PM_BASE_VERSION) \
     org.pm.build_version=$(PM_BUILD_VERSION) \
     ro.pm.maintainer=$(PM_MAINTAINER) \
-    org.pm.device=$(TARGET_DEVICE)
+    org.pm.device=$(TARGET_DEVICE) \
+    ro.pm.recovery.version=$(PM_RECOVERY_VERSION)
