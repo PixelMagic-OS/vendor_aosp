@@ -204,7 +204,8 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     Glimpse \
     Recorder \
-    Jelly
+    Jelly \
+    webview
 endif
 
 # These packages are excluded from user builds
