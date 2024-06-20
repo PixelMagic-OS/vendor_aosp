@@ -220,6 +220,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
 
+# OmniJaws
+PRODUCT_PACKAGES += \
+    OmniJaws
+
 # Overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     vendor/aosp/overlay
