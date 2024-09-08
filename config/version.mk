@@ -16,6 +16,7 @@ CUSTOM_BUILD_DATE := $(CUSTOM_DATE_YEAR)$(CUSTOM_DATE_MONTH)$(CUSTOM_DATE_DAY)-$
 # Platform (Android Version)
 CUSTOM_PLATFORM_VERSION := 15.0
 PM_BUILD_VERSION = 15.0
+PM_RECOVERY_VERSION := PixelMagic-$(CUSTOM_BUILD)
 
 CUSTOM_VERSION := PixelMagic_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)-$(CUSTOM_BUILD_TYPE)
 CUSTOM_VERSION_PROP := fifteen
@@ -36,7 +37,8 @@ ADDITIONAL_SYSTEM_PROPERTIES  += \
     org.pm.codename=$(PM_BASE_VERSION) \
     org.pm.build_version=$(PM_BUILD_VERSION) \
     ro.pm.maintainer=$(PM_MAINTAINER) \
-    org.pm.device=$(TARGET_DEVICE)
+    org.pm.device=$(TARGET_DEVICE) \
+    ro.pm.recovery.version=$(PM_RECOVERY_VERSION)
 
 # Signing
 -include vendor/lineage-priv/keys/keys.mk
