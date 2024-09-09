@@ -28,5 +28,17 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.custom.version=$(CUSTOM_VERSION) \
     ro.modversion=$(CUSTOM_VERSION)
 
+# Versioning props
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    org.pm.version=$(PM_BASE_VERSION) \
+    org.pm.build_date=$(CUSTOM_BUILD_DATE) \
+    org.pm.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
+    org.pm.build_type=$(CUSTOM_BUILD_TYPE) \
+    org.pm.codename=$(PM_BASE_VERSION) \
+    org.pm.build_version=$(PM_BUILD_VERSION) \
+    ro.pm.maintainer=$(PM_MAINTAINER) \
+    org.pm.device=$(TARGET_DEVICE_NAME) \
+    ro.pm.recovery.version=$(PM_RECOVERY_VERSION)
+
 # Signing
 -include vendor/lineage-priv/keys/keys.mk
