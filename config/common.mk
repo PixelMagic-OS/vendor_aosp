@@ -206,6 +206,8 @@ PRODUCT_PACKAGES += \
 # Launcher
 PRODUCT_PACKAGES += \
     Launcher3QuickStep \
+    LMOFreeform \
+    LMOFreeformSidebar
 
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
