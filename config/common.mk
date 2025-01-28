@@ -206,6 +206,7 @@ PRODUCT_PACKAGES += \
 # Launcher
 PRODUCT_PACKAGES += \
     Launcher3QuickStep \
+    GameSpace \
     LMOFreeform \
     LMOFreeformSidebar
 
