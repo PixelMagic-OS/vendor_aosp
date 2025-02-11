@@ -271,7 +271,8 @@ PRODUCT_PACKAGES += \
 # ThemePicker
 PRODUCT_PACKAGES += \
     ThemePicker \
-    ThemesStub
+    ThemesStub \
+    UdfpsAnimations
 
 # Translations
 CUSTOM_LOCALES += \
