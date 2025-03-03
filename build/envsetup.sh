@@ -64,7 +64,7 @@ alias bib=breakfast
 function eat()
 {
     if [ "$OUT" ] ; then
-        ZIPPATH=`ls -tr "$OUT"/PixelMagic-*.zip | tail -1`
+        ZIPPATH=`ls -tr "$OUT"/PixelMagic_*.zip | tail -1`
         if [ ! -f $ZIPPATH ] ; then
             echo "Nothing to eat"
             return 1
