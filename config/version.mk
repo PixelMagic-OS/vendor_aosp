@@ -5,13 +5,7 @@ CUSTOM_BUILD_TYPE ?= UNOFFICIAL
 PM_BASE_VERSION = ALPHAGENE
 
 # Time Related
-CUSTOM_DATE_YEAR := $(shell date -u +%Y)
-CUSTOM_DATE_MONTH := $(shell date -u +%m)
-CUSTOM_DATE_DAY := $(shell date -u +%d)
-CUSTOM_DATE_HOUR := $(shell date -u +%H)
-CUSTOM_DATE_MINUTE := $(shell date -u +%M)
-CUSTOM_BUILD_DATE_UTC := $(shell date -d '$(CUSTOM_DATE_YEAR)-$(CUSTOM_DATE_MONTH)-$(CUSTOM_DATE_DAY) $(CUSTOM_DATE_HOUR):$(CUSTOM_DATE_MINUTE) UTC' +%s)
-CUSTOM_BUILD_DATE := $(CUSTOM_DATE_YEAR)$(CUSTOM_DATE_MONTH)$(CUSTOM_DATE_DAY)-$(CUSTOM_DATE_HOUR)$(CUSTOM_DATE_MINUTE)
+CUSTOM_BUILD_DATE := $(shell date -u +%Y%m%d-%H%M)
 
 # Platform (Android Version)
 CUSTOM_PLATFORM_VERSION := 15.0
@@ -30,11 +24,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.modversion=$(CUSTOM_VERSION)
 
 # Updater
-ifeq ($(IS_OFFICIAL),true)
-    PRODUCT_PRODUCT_PROPERTIES += \
-        net.pixelos.build_type=ci \
-        net.pixelos.version=$(CUSTOM_VERSION_PROP)
-endif
+PRODUCT_PRODUCT_PROPERTIES += \
+    net.pixelos.version=$(CUSTOM_VERSION_PROP)
 
 # Versioning props
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -45,7 +36,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     org.pm.codename=$(PM_BASE_VERSION) \
     org.pm.build_version=$(PM_BUILD_VERSION) \
     ro.pm.maintainer=$(PM_MAINTAINER) \
-    org.pm.device=$(TARGET_DEVICE_NAME) \
+    org.pm.device=$(CUSTOM_BUILD) \
     ro.pm.recovery.version=$(PM_RECOVERY_VERSION)
 
 # Signing
