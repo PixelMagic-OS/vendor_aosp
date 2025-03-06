@@ -25,7 +25,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Updater
 PRODUCT_PRODUCT_PROPERTIES += \
-    net.pixelos.version=$(CUSTOM_VERSION_PROP)
+    net.pm.version=$(CUSTOM_VERSION_PROP)
 
 # Versioning props
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
